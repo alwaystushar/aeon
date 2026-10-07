@@ -1,0 +1,1 @@
+import Link from "next/link";export default function NotFound(){return <main className="not-found"><div><strong>404</strong><h1>This path doesn’t lead where you expected.</h1><p style={{color:"#aeb8c1"}}>Let’s take you back to firmer ground.</p><Link className="button gold" href="/">Return home</Link></div></main>}
