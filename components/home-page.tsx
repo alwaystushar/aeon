@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/site-link";
 import { useState } from "react";
 import { FiArrowDown, FiArrowRight, FiArrowUpRight } from "react-icons/fi";
 import { services } from "@/data/services";

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/site-link";
 import { useEffect, useState } from "react";
 import { FiMenu, FiX, FiArrowUpRight, FiInstagram, FiLinkedin } from "react-icons/fi";
 import { services } from "@/data/services";

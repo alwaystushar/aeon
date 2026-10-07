@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/site-link";
 import { FiArrowRight, FiCheckCircle, FiFileText, FiMessageCircle, FiSearch, FiSliders } from "react-icons/fi";
 import type { Service } from "@/data/services";
 const processIcons=[FiMessageCircle,FiSearch,FiSliders,FiFileText,FiCheckCircle];

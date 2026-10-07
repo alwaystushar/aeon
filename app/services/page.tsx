@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/site-link";
 import { FiArrowUpRight } from "react-icons/fi";
 import { services } from "@/data/services";
 export const metadata: Metadata={title:"Services",description:"Explore AEON Finvest services for personal, property, business and wealth needs."};
