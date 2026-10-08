@@ -168,19 +168,24 @@ export const managementTeam: TeamMember[] = [
 export function TeamSection() {
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
-  // Close modal on Escape key
+  // Close modal on Escape key and manage Lenis scroll
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") setSelectedMember(null);
     }
+    const lenis = (window as unknown as { __lenis?: { stop: () => void; start: () => void } }).__lenis;
+
     if (selectedMember) {
       document.body.style.overflow = "hidden";
+      lenis?.stop();
       window.addEventListener("keydown", handleKeyDown);
     } else {
       document.body.style.overflow = "";
+      lenis?.start();
     }
     return () => {
       document.body.style.overflow = "";
+      lenis?.start();
       window.removeEventListener("keydown", handleKeyDown);
     };
   }, [selectedMember]);
@@ -242,6 +247,7 @@ export function TeamSection() {
       {selectedMember && (
         <div
           className="team-modal-backdrop"
+          data-lenis-prevent="true"
           onClick={() => setSelectedMember(null)}
           role="dialog"
           aria-modal="true"
@@ -249,7 +255,10 @@ export function TeamSection() {
         >
           <div
             className="team-modal-dialog"
+            data-lenis-prevent="true"
             onClick={(e) => e.stopPropagation()}
+            onWheel={(e) => e.stopPropagation()}
+            onTouchMove={(e) => e.stopPropagation()}
           >
             <button
               className="team-modal-close"

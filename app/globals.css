@@ -545,8 +545,10 @@
   position: relative;
   width: 100%;
   max-width: 860px;
-  max-height: 90vh;
+  max-height: 88vh;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
   background: #ffffff;
   border-radius: 20px;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(200, 162, 74, 0.25);
