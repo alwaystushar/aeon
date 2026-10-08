@@ -258,3 +258,134 @@
 .footer-contact-snippets p{display:flex;align-items:flex-start;gap:8px;color:#c0c9d2!important;font-size:.78rem!important;line-height:1.5!important;margin:0}
 .footer-contact-snippets svg{color:var(--gold);margin-top:3px;flex-shrink:0}
 
+/* Floating Contact (Call & WhatsApp) */
+.floating-contact-container {
+  position: fixed;
+  right: 26px;
+  bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  z-index: 9999;
+  pointer-events: auto;
+}
+
+.floating-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(7, 28, 53, 0.28);
+  transition: transform 0.28s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.28s ease;
+  user-select: none;
+}
+
+.floating-btn:hover {
+  transform: translateY(-4px) scale(1.06);
+}
+
+.floating-btn--call {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+  border: 1.5px solid rgba(200, 162, 74, 0.6);
+  color: var(--gold-light);
+}
+
+.floating-btn--call:hover {
+  border-color: var(--gold-light);
+  box-shadow: 0 12px 28px rgba(7, 28, 53, 0.45);
+}
+
+.floating-btn--whatsapp {
+  background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+  color: #ffffff;
+}
+
+.floating-btn--whatsapp:hover {
+  box-shadow: 0 12px 30px rgba(37, 211, 102, 0.45);
+}
+
+.floating-icon {
+  font-size: 1.45rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.floating-pulse {
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(37, 211, 102, 0.4);
+  z-index: 1;
+  animation: floating-pulse 2s infinite ease-out;
+  pointer-events: none;
+}
+
+@keyframes floating-pulse {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+.floating-tooltip {
+  position: absolute;
+  right: calc(100% + 12px);
+  white-space: nowrap;
+  background: rgba(7, 28, 53, 0.94);
+  color: #ffffff;
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(8px);
+  transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+  pointer-events: none;
+}
+
+.floating-btn:hover .floating-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+@media (max-width: 640px) {
+  .floating-contact-container {
+    right: 18px;
+    bottom: 20px;
+    gap: 12px;
+  }
+  .floating-btn {
+    width: 48px;
+    height: 48px;
+  }
+  .floating-icon {
+    font-size: 1.3rem;
+  }
+  .floating-tooltip {
+    display: none;
+  }
+}
+
+

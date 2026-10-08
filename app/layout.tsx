@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import { Footer, Header } from "@/components/site-shell";
 import { SmoothScroll } from "@/components/smooth-scroll";
+import { FloatingContact } from "@/components/floating-contact";
 import "./globals.css";
 
 const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <FloatingContact />
       </body>
     </html>
   );
