@@ -36,7 +36,7 @@ export function Footer(){return <footer className="footer">
       <p>Empowering Growth Through Smart Financial Solutions. Over 15 years of trusted financial excellence across India and Canada.</p>
       <div className="footer-contact-snippets">
         <p><FiMapPin /> <strong>India Office:</strong> Plot No. C 133, Level 1st, Phase 8 Industrial Area, Mohali</p>
-        <p><FiPhone /> +91 9815965451, +91 9821947707</p>
+        <p><FiPhone /> +91 9815965451</p>
         <p><FiMapPin /> <strong>Canada Office:</strong> 217 NA A Drive, SW Calgary T3H6A4</p>
         <p><FiMail /> sales@aeonfinvestservices.com</p>
       </div>

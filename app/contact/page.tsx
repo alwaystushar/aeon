@@ -50,8 +50,8 @@ export default function Contact() {
             <article>
               <span><FiPhone aria-hidden="true" /></span>
               <div>
-                <strong>Direct Phones</strong>
-                <p>+91 9815965451 &nbsp;|&nbsp; +91 9821947707</p>
+                <strong>Direct Phone</strong>
+                <p>+91 9815965451</p>
               </div>
             </article>
 

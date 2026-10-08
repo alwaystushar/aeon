@@ -123,7 +123,7 @@ export default function About() {
             <h2>Proven Scale.<br/>Measurable Impact.</h2>
           </div>
           <p className="milestones-sub">
-            A legacy of institutional relationships, multi-disciplinary advisory, and thousands of successfully funded personal and commercial ambitions across India and Canada.
+            A legacy of institutional relationships, multi-disciplinary advisory, and thousands of successfully funded commercial and personal ambitions across India and Canada.
           </p>
         </div>
         <div className="milestones-grid">
