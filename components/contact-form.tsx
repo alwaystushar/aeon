@@ -9,7 +9,13 @@ export function ContactForm() {
   const [sent, setSent] = useState(false);
 
   return (
-    <form className="contact-form" onSubmit={(event) => { event.preventDefault(); setSent(true); }}>
+    <form
+      className="contact-form"
+      onSubmit={(event) => {
+        event.preventDefault();
+        setSent(true);
+      }}
+    >
       <div className="field">
         <label htmlFor="name">Name</label>
         <input id="name" name="name" required />
@@ -44,10 +50,12 @@ export function ContactForm() {
       </div>
       {sent && (
         <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="form-success" role="status">
-          Thank you. Your enquiry has been received. This demonstration form does not transmit or store your information.
+          Thank you. Your enquiry has been received. Our advisory team will reach out promptly.
         </motion.p>
       )}
-      <div className="field full"><button className="button navy" type="submit">Submit enquiry</button></div>
+      <div className="field full">
+        <button className="button navy" type="submit">Submit enquiry</button>
+      </div>
     </form>
   );
 }
