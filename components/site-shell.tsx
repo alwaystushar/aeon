@@ -42,7 +42,7 @@ export function Footer(){return <footer className="footer">
       </div>
     </div>
     <div><h3>Explore</h3>{links.slice(1).map(([l,h])=><Link key={h} href={h}>{l}</Link>)}</div>
-    <div><h3>Core Services</h3>{services.slice(0,5).map(s=><Link key={s.slug} href={`/services/${s.slug}`}>{s.name}</Link>)}</div>
+    <div><h3>Core Services</h3>{services.slice(0,6).map(s=><Link key={s.slug} href={`/services/${s.slug}`}>{s.name}</Link>)}</div>
     <div><h3>Legal &amp; Social</h3><Link href="/privacy-policy">Privacy policy</Link><Link href="/terms-and-conditions">Terms &amp; conditions</Link><span className="socials"><FiLinkedin/><FiInstagram/></span></div>
   </div>
   <div className="footer-bottom"><span>© 2026 AEON FINVEST SERVICES LLP</span><span>Empowering Growth Through Smart Financial Solutions</span></div>

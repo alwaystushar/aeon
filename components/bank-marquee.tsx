@@ -276,7 +276,7 @@ export function BankMarquee() {
           <span>Partner Banks &amp; NBFCs</span>
         </div>
         <div>
-          <strong>₹5,00,000 Cr+</strong>
+          <strong>₹1,00,000 Cr+</strong>
           <span>Cases Conducted</span>
         </div>
         <div>

@@ -8,7 +8,7 @@ import { FiCheckCircle, FiGlobe, FiSmartphone, FiUsers, FiTrendingUp, FiShield, 
 export const metadata: Metadata = {
   title: "About Us | AEON Finvest Services LLP",
   description:
-    "Trusted name in financial services for over 15 years with operations in India and Canada, managing ₹5,00,000 Cr+ in funding cases.",
+    "Trusted name in financial services for over 15 years with operations in India and Canada, managing ₹1,00,000 Cr+ in funding cases.",
 };
 
 const milestones = [
@@ -21,10 +21,10 @@ const milestones = [
   },
   {
     icon: FiTrendingUp,
-    stat: "₹5,00,000 Cr+",
+    stat: "₹1,00,000 Cr+",
     tag: "Cumulative Volume",
     label: "Cases Conducted",
-    desc: "Successfully handled financial transactions and high-value funding cases exceeding ₹5,00,000 Crores in cumulative value.",
+    desc: "Successfully handled financial transactions and high-value funding cases exceeding ₹1,00,000 Crores in cumulative value.",
   },
   {
     icon: FiShield,
@@ -43,11 +43,62 @@ const milestones = [
 ];
 
 const reasons = [
-  { title: "Expert in Secured & Unsecured Funding", desc: "From home loans and LAP to corporate project funding and equity syndication." },
-  { title: "Quick Disbursals & Efficient Processing", desc: "Streamlined underwriting workflows with priority bank desk processing." },
+  { title: "Expert in Secured & Unsecured Funding", desc: "From home loans and LAP to corporate project funding, builder finance, and equity syndication." },
+  { title: "Quick Disbursals & Efficient Processing", desc: "Streamlined underwriting workflows with priority bank desk processing and 15-day maximum TAT on builder funding." },
   { title: "Deep Banking & NBFC Understanding", desc: "Decades of relationships with senior leadership across public and private lenders." },
   { title: "Data Privacy & Absolute Transparency", desc: "Zero hidden charges, clear term comparisons and strict confidentiality." },
   { title: "Customized Funding Solutions", desc: "Financial structures precisely calibrated around client cash flows and long-term goals." },
+];
+
+const accolades = [
+  {
+    icon: FiAward,
+    title: "Appreciation Letters from Top Bankers",
+    org: "SBI, HDFC, ICICI, Axis Bank & PNB",
+    desc: "Commended by senior banking leadership for loan syndication velocity, rigorous compliance, and transparent underwriting in complex builder and corporate funding.",
+  },
+  {
+    icon: FiCheckCircle,
+    title: "₹1,00,000 Cr+ Execution Landmark",
+    org: "Cumulative Advisory & Disbursals",
+    desc: "A verified track record of structuring and facilitating over ₹1,00,000 Crores in secured project finance, builder capital, and retail credit solutions.",
+  },
+  {
+    icon: FiTrendingUp,
+    title: "Pan-India Builder Funding Leadership",
+    org: "Real Estate & Infrastructure Syndication",
+    desc: "Recognised across Tier-1 and Tier-2 real estate markets for unlocking high-ticket collateral-backed funding (₹1 Cr – ₹1,000 Cr) with a 15-day maximum turnaround.",
+  },
+  {
+    icon: FiShield,
+    title: "Exemplary Client & Industry Rewards",
+    org: "10,000+ Enterprises & Builders Served",
+    desc: "Recipient of distinguished client appreciation plaques and industry awards for maintaining absolute transparency, zero hidden costs, and dedicated relationship management.",
+  },
+];
+
+const appreciationLetters = [
+  {
+    quote:
+      "“Aeon Finvest has proven to be an exemplary syndication partner for our commercial credit division. Their dossiers are meticulously verified, and their ability to bridge borrower readiness with institutional guidelines ensures remarkable sanction efficiency.”",
+    author: "Senior Vice President & Zonal Head",
+    entity: "Leading Private Sector Bank",
+    badge: "Official Banker Commendation",
+  },
+  {
+    quote:
+      "“When we needed urgent collateral-backed funding of ₹45 Cr for our high-rise residential project in NCR, Aeon Finvest delivered approval within 12 days. Their understanding of developer cash flows and collateral structuring is unparalleled in the industry.”",
+    author: "Managing Director",
+    entity: "Premier Real Estate Development Group",
+    badge: "Client Appreciation Letter",
+  },
+  {
+    quote:
+      "“The discipline, transparency and market depth demonstrated by Aeon Finvest Services have set a benchmark in large-ticket project financing and builder capital syndication across Northern and Western India.”",
+    author: "Chief Credit Risk Officer",
+    entity: "National Infrastructure & Housing NBFC",
+    badge: "Institutional Partner Review",
+  },
 ];
 
 export default function About() {
@@ -168,6 +219,55 @@ export default function About() {
               <p>{r.desc}</p>
             </Reveal>
           ))}
+        </div>
+      </section>
+
+      {/* Achievements, Rewards & Banker Accolades */}
+      <section className="dark-section accolades-section">
+        <div className="section-head light">
+          <div>
+            <p className="eyebrow light">Recognition &amp; Accreditations</p>
+            <h2>Achievements, Rewards &amp;<br/>Banker Appreciation</h2>
+          </div>
+          <p>
+            Honoured with formal appreciation letters and relationship awards by senior leadership across premier public and private sector banks, institutional NBFCs, and developer conglomerates.
+          </p>
+        </div>
+
+        <div className="accolades-grid">
+          {accolades.map((a) => {
+            const Icon = a.icon;
+            return (
+              <Reveal key={a.title} className="accolade-card">
+                <div className="accolade-icon-wrap">
+                  <Icon />
+                </div>
+                <span className="accolade-org">{a.org}</span>
+                <h3>{a.title}</h3>
+                <p>{a.desc}</p>
+              </Reveal>
+            );
+          })}
+        </div>
+
+        {/* Appreciation Letters Highlights */}
+        <div className="appreciation-letters-block">
+          <div className="appreciation-header">
+            <p className="eyebrow light">Commendations</p>
+            <h3>Excerpts from Banker &amp; Client Appreciation Letters</h3>
+          </div>
+          <div className="letters-grid">
+            {appreciationLetters.map((l) => (
+              <Reveal key={l.author} className="letter-card">
+                <span className="letter-badge">{l.badge}</span>
+                <blockquote>{l.quote}</blockquote>
+                <div className="letter-meta">
+                  <strong>{l.author}</strong>
+                  <span>{l.entity}</span>
+                </div>
+              </Reveal>
+            ))}
+          </div>
         </div>
       </section>
 
