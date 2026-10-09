@@ -1,5 +1,11 @@
 import type { Metadata } from "next";import { LegalPage } from "@/components/legal-page";
-export const metadata:Metadata={title:"Terms & Conditions",description:"Placeholder terms for the AEON Finvest website."};
+export const metadata: Metadata = {
+  title: "Terms & Conditions",
+  description: "Terms and conditions of service for AEON Finvest Services LLP.",
+  alternates: {
+    canonical: "https://aeonfinvest.com/terms-and-conditions",
+  },
+};
 const sections=[
 {heading:"Introduction",body:"These placeholder terms outline general conditions for using this informational website. They require legal review and company-specific details before publication."},
 {heading:"Services",body:"Website content is general information and does not constitute a binding offer, approval, investment advice or financial guarantee. Actual services remain subject to assessment and applicable provider terms."},

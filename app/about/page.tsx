@@ -6,9 +6,19 @@ import { BankMarquee } from "@/components/bank-marquee";
 import { FiCheckCircle, FiGlobe, FiSmartphone, FiUsers, FiTrendingUp, FiShield, FiAward } from "react-icons/fi";
 
 export const metadata: Metadata = {
-  title: "About Us | AEON Finvest Services LLP",
+  title: "About Us | Leadership, Track Record & Management Team",
   description:
-    "Trusted name in financial services for over 15 years with operations in India and Canada, managing ₹1,00,000 Cr+ in funding cases.",
+    "Trusted name in financial services for over 15 years with operations in India and Canada, managing ₹1,00,000 Cr+ in funding cases with senior banking and CA leadership.",
+  alternates: {
+    canonical: "https://aeonfinvest.com/about",
+  },
+  openGraph: {
+    title: "About Us | AEON Finvest Services LLP",
+    description:
+      "Discover AEON Finvest's 15+ years track record, ₹1,00,000 Cr+ volume, and cross-functional leadership of former bankers, CAs, and credit heads.",
+    url: "https://aeonfinvest.com/about",
+    images: [{ url: "/images/about-team.jpg", width: 1200, height: 630, alt: "AEON Finvest Leadership Team" }],
+  },
 };
 
 const milestones = [

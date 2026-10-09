@@ -3,9 +3,18 @@ import { ContactForm } from "@/components/contact-form";
 import { FiMail, FiMapPin, FiPhone, FiGlobe } from "react-icons/fi";
 
 export const metadata: Metadata = {
-  title: "Contact Us | AEON Finvest Services LLP",
+  title: "Contact Advisory Desk | Mohali, India & Calgary, Canada",
   description:
-    "Get in touch with AEON Finvest Services LLP in Mohali, India and Calgary, Canada.",
+    "Get in touch with AEON Finvest Services LLP advisory team. Offices in Mohali, Punjab (Plot No. C 133, Industrial Area Phase 8) and Calgary, Canada.",
+  alternates: {
+    canonical: "https://aeonfinvest.com/contact",
+  },
+  openGraph: {
+    title: "Contact Advisory Desk | AEON Finvest Services LLP",
+    description:
+      "Speak directly with our senior banking advisors and financial consultants in India and Canada.",
+    url: "https://aeonfinvest.com/contact",
+  },
 };
 
 export default function Contact() {

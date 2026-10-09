@@ -1,5 +1,11 @@
 import type { Metadata } from "next";import { LegalPage } from "@/components/legal-page";
-export const metadata:Metadata={title:"Privacy Policy",description:"Placeholder privacy information for the AEON Finvest website."};
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description: "Privacy policy and data governance practices for AEON Finvest Services LLP.",
+  alternates: {
+    canonical: "https://aeonfinvest.com/privacy-policy",
+  },
+};
 const sections=[
 {heading:"Information We Collect",body:"If you choose to use an enquiry form, you may enter contact and enquiry details. In this frontend demonstration, information is not transmitted or stored. A production policy should describe all actual collection practices."},
 {heading:"How We Use Information",body:"Information submitted through a future production website may be used to respond to enquiries, provide requested information and improve service. Specific purposes and lawful bases should be confirmed before launch."},
