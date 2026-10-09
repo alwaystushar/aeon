@@ -56,6 +56,41 @@ export const managementTeam: TeamMember[] = [
     ]
   },
   {
+    name: "Harsh Chaudhary",
+    role: "Senior Banking & Corporate Finance Advisor",
+    qualification: "Former Nationalised Bank Professional",
+    experience: "Nearly 2 Decades",
+    subtitle: "Advisory Funding | Corporate Lending Solutions",
+    tagline: "Connecting Business Ambitions with Strategic Funding Solutions.",
+    bio: "Senior Banking & Corporate Finance Advisor with nearly two decades of banking experience as a former nationalised bank professional, specializing in complex credit proposals, corporate finance, and structured lending solutions.",
+    image: "/images/team/harsh-chaudhary.jpg",
+    fullBio: [
+      "With nearly two decades of experience in the banking sector as a former nationalised bank professional, Harsh Chaudhary brings extensive financial expertise, banking insight, and strategic funding capabilities to AFS Aeon Finvest Services LLP.",
+      "Specialising in complex funding requirements, corporate finance advisory, and structured lending solutions, he works with entrepreneurs, business owners, MSMEs, established corporates, and large business groups to identify suitable financing opportunities aligned with their business objectives and growth strategies.",
+      "His expertise spans a comprehensive range of financial products, including Project Finance, MSME Funding, Corporate Loans, Business Expansion Finance, Debt Consolidation, Loan Against Property, Working Capital Facilities, Cash Credit and Overdraft Limits, Letters of Credit (LC), and Bank Guarantees (BG).",
+      "Harsh’s strength lies in understanding the financial structure, operational requirements, and growth potential of businesses and translating these needs into well-prepared funding proposals. He supports clients throughout the funding journey, from initial financial assessment and documentation to lender identification, proposal coordination, and follow-up with relevant banking and financial institutions.",
+      "Drawing on his professional experience and established industry relationships, including access to senior-level banking contacts, he helps businesses navigate complex lending processes and explore appropriate financing structures for expansion, infrastructure development, capital expenditure, and strategic business initiatives.",
+      "At AFS Aeon Finvest Services LLP, Harsh is committed to building long-term financial partnerships founded on professionalism, transparency, and strategic thinking. His objective is to connect businesses with suitable funding opportunities, facilitate informed financial decisions, and support sustainable growth through tailored financing solutions."
+    ],
+    expertise: [
+      "Corporate Funding Strategy",
+      "Project Finance",
+      "Complex Credit Proposals",
+      "Debt Restructuring Support",
+      "MSME & Enterprise Lending",
+      "Working Capital Solutions",
+      "Banking Relationship Management",
+      "Loan Against Property & BG/LC"
+    ],
+    highlights: [
+      "Nearly two decades in banking as a former nationalised bank professional",
+      "Large-ticket funding expertise in corporate, infrastructure & project finance",
+      "Established industry relationships with senior banking & NBFC officials",
+      "End-to-end funding coordination from financial assessment to lender liaison",
+      "Specialist in complex credit proposals, structured lending & working capital"
+    ]
+  },
+  {
     name: "Dr. Maansi Makkar",
     role: "Credit Head – Credit Team",
     qualification: "PhD in International Finance",
@@ -198,7 +233,7 @@ export function TeamSection() {
           <h2>Our Management Team</h2>
         </div>
         <p>
-          Seasoned banking advisors, former Citibank leaders, chartered accountants, and credit heads assembling cross-functional excellence across corporate and builder finance.
+          Seasoned banking advisors, former Citibank and nationalised bank leaders, chartered accountants, and credit heads assembling cross-functional excellence across corporate and builder finance.
         </p>
       </div>
 
