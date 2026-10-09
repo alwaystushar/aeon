@@ -22,37 +22,38 @@ export type TeamMember = {
 
 export const managementTeam: TeamMember[] = [
   {
-    name: "Karan Sharma",
+    name: "Harsh Chaudhary",
     role: "Senior Banking & Corporate Finance Advisor",
-    qualification: "Former Branch Head, Citibank",
+    qualification: "Former Nationalised Bank Professional",
     experience: "Nearly 2 Decades",
-    subtitle: "Strategic Funding | Corporate Lending Solutions",
+    subtitle: "Advisory Funding | Corporate Lending Solutions",
     tagline: "Connecting Business Ambitions with Strategic Funding Solutions.",
-    bio: "Senior Banking & Corporate Finance Advisor with nearly two decades of leadership including Citibank Branch Head, specializing in strategic funding, corporate lending, and builder project finance.",
-    image: "/images/team/karan-sharma.jpg",
+    bio: "Senior Banking & Corporate Finance Advisor with nearly two decades of banking experience as a former nationalised bank professional, specializing in complex funding, corporate finance, and structured lending solutions.",
+    image: "/images/team/harsh-chaudhary.jpg",
     fullBio: [
-      "Karan Sharma brings nearly two decades of experience in the banking and financial services sector, including his tenure with Citibank as a Branch Head. With a strong understanding of financial products, credit assessment, banking operations, and lending solutions, he combines valuable banking experience with a strategic approach to business finance and corporate funding.",
-      "At AFS Aeon Finvest Services LLP, Karan focuses on helping entrepreneurs, business owners, MSMEs, established enterprises, and large corporations identify suitable financing opportunities to support business expansion, capital requirements, operational efficiency, and long-term growth.",
-      "His expertise covers a broad spectrum of financial solutions, including Project Finance, MSME Loans, Corporate Funding, Business Loans, Debt Consolidation, Business Expansion Finance, Working Capital Facilities, Cash Credit and Overdraft Limits, Letters of Credit (LC), and Bank Guarantees (BG).",
-      "With comprehensive knowledge of financial products and lending structures, Karan understands the importance of aligning a business’s financial requirements with appropriate lender policies, credit parameters, repayment capacity, and documentation requirements. He supports clients in evaluating funding options, preparing structured loan proposals, identifying suitable banks and NBFCs, and coordinating with financial institutions throughout the funding process.",
-      "His professional relationships across the banking industry, including connections with senior banking officials, strengthen his ability to facilitate meaningful discussions between businesses and potential lenders. He is particularly focused on assisting clients with complex funding requirements, large-ticket financing proposals, project development, business expansion, and corporate financial planning.",
-      "At AFS Aeon Finvest Services LLP, Karan is committed to delivering professional, transparent, and client-centric financial advisory services. His objective is to simplify complex funding processes, develop long-term business relationships, and help clients explore appropriate financial solutions that support sustainable growth and create lasting business value."
+      "With nearly two decades of experience in the banking sector as a former nationalised bank professional, Harsh Chaudhary brings extensive financial expertise, banking insight, and strategic funding capabilities to AFS Aeon Finvest Services LLP.",
+      "Specialising in complex funding requirements, corporate finance advisory, and structured lending solutions, he works with entrepreneurs, business owners, MSMEs, established corporates, and large business groups to identify suitable financing opportunities aligned with their business objectives and growth strategies.",
+      "His expertise spans a comprehensive range of financial products, including Project Finance, MSME Funding, Corporate Loans, Business Expansion Finance, Debt Consolidation, Loan Against Property, Working Capital Facilities, Cash Credit and Overdraft Limits, Letters of Credit (LC), and Bank Guarantees (BG).",
+      "Harsh’s strength lies in understanding the financial structure, operational requirements, and growth potential of businesses and translating these needs into well-prepared funding proposals. He supports clients throughout the funding journey, from initial financial assessment and documentation to lender identification, proposal coordination, and follow-up with relevant banking and financial institutions.",
+      "Drawing on his professional experience and established industry relationships, including access to senior-level banking contacts, he helps businesses navigate complex lending processes and explore appropriate financing structures for expansion, infrastructure development, capital expenditure, and strategic business initiatives.",
+      "At AFS Aeon Finvest Services LLP, Harsh is committed to building long-term financial partnerships founded on professionalism, transparency, and strategic thinking. His objective is to connect businesses with suitable funding opportunities, facilitate informed financial decisions, and support sustainable growth through tailored financing solutions."
     ],
     expertise: [
+      "Corporate Funding Strategy",
       "Project Finance",
-      "Builder & Real Estate Funding",
-      "Corporate Funding & Lending",
-      "MSME & Business Loans",
-      "Debt Consolidation",
-      "Business Expansion Finance",
-      "Working Capital (CC/OD)",
-      "Letters of Credit (LC) & BG"
+      "Complex Credit Proposals",
+      "Debt Restructuring Support",
+      "MSME & Enterprise Lending",
+      "Working Capital Solutions",
+      "Banking Relationship Management",
+      "Loan Against Property & BG/LC"
     ],
     highlights: [
-      "Nearly two decades in banking and financial services",
-      "Former Branch Head at Citibank",
-      "Specialist in complex, large-ticket financing proposals",
-      "Direct relationships with senior leadership across public & private banks"
+      "Nearly two decades in banking as a former nationalised bank professional",
+      "Large-ticket funding expertise in corporate, infrastructure & project finance",
+      "Established industry relationships with senior banking & NBFC officials",
+      "End-to-end funding coordination from financial assessment to lender liaison",
+      "Specialist in complex credit proposals, structured lending & working capital"
     ]
   },
   {
@@ -198,7 +199,7 @@ export function TeamSection() {
           <h2>Our Management Team</h2>
         </div>
         <p>
-          Seasoned banking advisors, former Citibank leaders, chartered accountants, and credit heads assembling cross-functional excellence across corporate and builder finance.
+          Seasoned banking advisors, former nationalised bank leaders, chartered accountants, and credit heads assembling cross-functional excellence across corporate and builder finance.
         </p>
       </div>
 
